@@ -1,0 +1,538 @@
+html{
+	scroll-behavior: smooth;
+}
+
+.bgGradient {
+	background: #C7FCE9; /*linear-gradient(45deg, #C7FCE9, #C7FCE9/* #31C48D);*/
+	font-family: Tahoma;
+	height: 100%
+}
+
+body {
+	background: url(images/background.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%
+}
+
+.homeLogo{
+	width: 47%;
+	height: relative;
+}
+
+.GLogoClass {
+	width: 10%;
+	height: 10%;
+	margin-left: 45%;
+	margin-top: 75px;
+}
+
+.homeTbl{
+	margin-left: 37%;
+	margin-top: 10%;
+}
+
+.container{
+	font-family: Josefin Slab;
+	background: #02b06e;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-left: 80px;
+	padding-right: 60px;
+	flex-wrap: wrap;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px, 20px;
+}
+
+nav ul li a{
+	color: #F2F2F2;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px;
+	align-items: right;
+}
+
+nav ul li a:hover{
+	color: #182628;
+}
+
+* {box-sizing: border-box;}
+
+.emp-layout{
+	display: inline-block;
+}
+
+.ggcontainer-img {
+	margin-top: 10px;
+	margin-left: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.gg-layout{
+	display: inline-block;
+}
+
+.ggimage {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #F2F2F2; 
+  width: 120px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 12px;
+  padding: 6px;
+  text-align: center;
+}
+
+.ggcontainer-img:hover .overlay {
+  opacity: 1;
+}
+
+.darkModeButton{
+	background-color: #182628;
+	color: #F2F2F2;
+	border: none;
+	padding: 8px 12px;
+	border-radius: 20px;
+}
+
+.darkModeButtonToLightMode{
+	background-color: #182628; /*#182628;*/
+	/*color: #C7FCE9; /*#F2F2F2;*/
+}
+
+.lightModeButton{
+	background-color: #C7FCE9;
+	color: #182628;
+	border: none;
+	padding: 8px 12px;
+	border-radius: 20px;
+}
+
+.darkModeButton:hover{
+	transform: scale(1.3);
+}
+
+.body-font{
+	color: #000000;
+}
+
+.Desc-darkmode{
+	color: #C7FCE9;
+}
+
+.gg-text{
+	color: black;
+}
+
+.postsDisplayTable {
+  font-family: Tahoma;
+  border-collapse: collapse;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.postsDisplayTable td, .postsDisplayTable th {
+  border: 1px solid #DDDDDD;
+  padding: 8px;
+}
+
+.postsDisplayTable tr{
+	background-color: #f2f2f2;
+}
+
+.postsDisplayTable tr:hover {
+	background-color: #DDDDDD;
+}
+
+.postsDisplayTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #02b06e;
+  color: #182628;
+}
+
+.footer {
+	font-family: Tahoma;
+	text-align: center;
+	padding: 8px;
+	background-color: #182628 ;
+	color: #F2F2F2;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+}
+
+.footerDark{
+	font-family: Tahoma;
+	text-align: center;
+	padding: 8px;
+	background-color: #C7FCE9 ;
+	color: #182628;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+}
+
+footer a{
+	color: #F2F2F2;
+	text-decoration: underlined;
+	cursor: pointer;
+}
+
+.footerDark a{
+	color: #182628;
+	text-decoration: underlined;
+	cursor: pointer;
+}
+
+.postsDisplayTable{
+	vertical-align: middle; 
+}
+
+.gameGuruGrid a{
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 50px;
+}
+
+.emporeImages{
+	width: 200px;
+	height: relative;
+}
+
+.image-desc{
+	display: inline-block;
+}
+
+.mySlides {display: none}
+.ssimg {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin-top: 4px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0px 0px 8px #FFFFFF;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.button {
+    display: inline-block;
+    width:47%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 1px solid #162224;
+    border-radius: 4px;
+    background: #3c5f64;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3c5f64), to(#162224));
+    background: -moz-linear-gradient(top, #3c5f64, #162224);
+    background: linear-gradient(to bottom, #3c5f64, #162224);
+    -webkit-box-shadow: #487278 0px 0px 10px 0px;
+    -moz-box-shadow: #487278 0px 0px 10px 0px;
+    box-shadow: #487278 0px 0px 10px 0px;
+    text-shadow: #0c1314 0px 0px 6px;
+    font: normal normal bold 20px trebuchet ms;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    border: 1px solid #182628;
+    background: #487278;
+    background: -webkit-gradient(linear, left top, left bottom, from(#487278), to(#1a292b));
+    background: -moz-linear-gradient(top, #487278, #1a292b);
+    background: linear-gradient(to bottom, #487278, #1a292b);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #162224;
+    background: -webkit-gradient(linear, left top, left bottom, from(#162224), to(#162224));
+    background: -moz-linear-gradient(top, #162224, #162224);
+    background: linear-gradient(to bottom, #162224, #162224);
+}
+
+.adminButton {
+    display: inline-block;
+    width: 47%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 1px solid #741c1c;
+    border-radius: 4px;
+    background: #db3535;
+    background: -webkit-gradient(linear, left top, left bottom, from(#db3535), to(#741c1c));
+    background: -moz-linear-gradient(top, #db3535, #741c1c);
+    background: linear-gradient(to bottom, #db3535, #741c1c);
+    -webkit-box-shadow: #ff4040 0px 0px 10px 0px;
+    -moz-box-shadow: #ff4040 0px 0px 10px 0px;
+    box-shadow: #ff4040 0px 0px 10px 0px;
+    text-shadow: #451111 0px 0px 6px;
+    font: normal normal bold 20px trebuchet ms;
+    color: #ffffff;
+    text-decoration: none;
+}
+.adminButton:hover,
+.adminButton:focus {
+    border: 1px solid #892121;
+    background: #ff4040;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff4040), to(#8b2222));
+    background: -moz-linear-gradient(top, #ff4040, #8b2222);
+    background: linear-gradient(to bottom, #ff4040, #8b2222);
+    color: #ffffff;
+    text-decoration: none;
+}
+.adminButton:active {
+    background: #741c1c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#741c1c), to(#741c1c));
+    background: -moz-linear-gradient(top, #741c1c, #741c1c);
+    background: linear-gradient(to bottom, #741c1c, #741c1c);
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.display-image{
+    width: 90%;
+    margin-left: 5%;
+    vertical-align: middle;
+}
+
+.studioImages{
+	width: 200px;
+	height: 160px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.studioImages:hover{
+	transform: scale(2.0);
+}
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=time], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=file], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=tel], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=reset] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+.chartsContainer{
+	height: 100%;	
+}
+
+.buttonType {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttonType:hover {
+  background-color: #45a049;
+}
+
+.formClass {
+	margin-top: 50px;
+	margin-left: 33%;
+	margin-right:33%;
+	border-style: solid;
+	border-color: #57BA98;
+	border-width: 8px;
+	border-radius: 4px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
